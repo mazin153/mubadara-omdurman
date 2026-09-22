@@ -6,8 +6,9 @@
 // استخدم anon/public key فقط.
 // لا تضع service_role key في هذا الملف أو GitHub.
 
-const SUPABASE_URL = "https://YOUR-PROJECT-REF.supabase.co";
-const SUPABASE_ANON_KEY = "YOUR_ANON_PUBLIC_KEY";
+// إعدادات Supabase
+const SUPABASE_URL = "https://fkojmjghrqzmcapfdicz.supabase.co"; 
+const SUPABASE_ANON_KEY = "sb_publishable_2WEGGksGAuJ-Y61L4UrcVw_lhMwusm7"; // ضع هنا المفتاح الذي نسخته من التبويب Legacy anon public
 
 const supabaseClient = window.supabase.createClient(
   SUPABASE_URL,
