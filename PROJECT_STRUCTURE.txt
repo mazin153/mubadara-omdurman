@@ -1,0 +1,15 @@
+mubadara_shabab_omdurman/
+│
+├── index.html                 ← موقع الزوار
+├── admin.html                 ← لوحة المسؤول
+├── app.js                     ← عرض الأنشطة
+├── admin.js                   ← تسجيل الدخول والرفع والإدارة
+├── config.js                  ← بيانات Supabase
+├── style.css                  ← التصميم
+│
+├── supabase.sql               ← قاعدة البيانات + الصلاحيات + Storage
+├── GITHUB_SUPABASE_GUIDE.md   ← خطوات التشغيل
+├── README.md
+│
+└── assets/
+    └── logo.jpg               ← شعار مبادرة شباب أمدرمان

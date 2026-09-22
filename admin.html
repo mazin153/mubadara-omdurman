@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>لوحة إدارة المبادرة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.jpg" alt="شعار المبادرة">
+      <span>لوحة الإدارة</span>
+    </a>
+    <a href="index.html">العودة للموقع</a>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container admin-wrap">
+    <div id="loginBox" class="panel">
+      <h1>دخول المسؤول</h1>
+      <p>هذه الصفحة مخصصة للمسؤولين المعتمدين.</p>
+      <form id="loginForm">
+        <label>البريد الإلكتروني
+          <input id="email" type="email" required>
+        </label>
+        <label>كلمة المرور
+          <input id="password" type="password" required>
+        </label>
+        <button class="btn" type="submit">دخول</button>
+      </form>
+      <div id="loginMsg" class="msg"></div>
+    </div>
+
+    <div id="dashboard" class="hidden">
+      <div class="section-head">
+        <div>
+          <h1>إدارة الأنشطة</h1>
+          <p id="userInfo"></p>
+        </div>
+        <button id="logoutBtn" class="btn secondary">تسجيل الخروج</button>
+      </div>
+
+      <div class="panel">
+        <h2>إضافة نشاط جديد</h2>
+        <form id="activityForm">
+          <label>عنوان النشاط
+            <input id="title" required maxlength="150" placeholder="مثال: حملة نظافة في حي...">
+          </label>
+          <label>تاريخ النشاط
+            <input id="activityDate" type="date" required>
+          </label>
+          <label>وصف / تقرير مختصر
+            <textarea id="description" rows="6" required placeholder="اكتب تفاصيل النشاط..."></textarea>
+          </label>
+          <label>صورة النشاط
+            <input id="imageFile" type="file" accept="image/*">
+          </label>
+          <label>تقرير PDF (اختياري)
+            <input id="reportFile" type="file" accept="application/pdf">
+          </label>
+          <button class="btn" type="submit">نشر النشاط</button>
+        </form>
+        <div id="formMsg" class="msg"></div>
+      </div>
+
+      <div class="panel">
+        <h2>الأنشطة المنشورة</h2>
+        <div id="adminActivities" class="admin-list"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

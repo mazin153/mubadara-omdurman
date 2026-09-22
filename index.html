@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>مبادرة شباب أمدرمان</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.jpg" alt="شعار مبادرة شباب أمدرمان">
+      <span>مبادرة شباب أمدرمان</span>
+    </a>
+    <nav>
+      <a href="#about">عن المبادرة</a>
+      <a href="#activities">الأنشطة</a>
+      <a href="#contact">تواصل معنا</a>
+      <a class="admin-link" href="admin.html">دخول المسؤولين</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">تطوع • تنمية • توعية • بناء</span>
+      <h1>مبادرة شباب أمدرمان</h1>
+      <p>من أجل مجتمع أقوى.. ومستقبل أفضل</p>
+      <a class="btn" href="#activities">شاهد آخر الأنشطة</a>
+    </div>
+    <img class="hero-logo" src="assets/logo.jpg" alt="شعار المبادرة">
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2>نبذة عن المبادرة</h2>
+    <p>
+      مبادرة شباب أمدرمان مبادرة شبابية تهدف إلى خدمة المجتمع عبر العمل التطوعي،
+      وتنفيذ الأنشطة التنموية والتوعوية والمجتمعية، وتشجيع الشباب على المشاركة
+      وصناعة أثر إيجابي ومستدام.
+    </p>
+  </div>
+</section>
+
+<section id="activities" class="section light">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>آخر الأنشطة</h2>
+        <p>هنا تظهر الأنشطة التي يرفعها المسؤولون من لوحة الإدارة.</p>
+      </div>
+      <button id="refreshBtn" class="btn secondary">تحديث</button>
+    </div>
+    <div id="activitiesGrid" class="cards">
+      <div class="loading">جاري تحميل الأنشطة...</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container contact-box">
+    <h2>تواصل معنا</h2>
+    <p>للاستفسارات والمشاركة في أنشطة المبادرة يمكن التواصل مع فريق المبادرة.</p>
+    <p>ضع رقم واتساب أو روابط التواصل الخاصة بالمبادرة هنا.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 مبادرة شباب أمدرمان — جميع الحقوق محفوظة</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
