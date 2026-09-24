@@ -144,8 +144,8 @@ using (bucket_id = 'media');
 --
 -- انسخ UUID للمستخدم ثم نفذ:
 --
--- insert into public.profiles (id, full_name, role)
--- values ('USER_UUID_HERE', 'مسؤول المبادرة', 'admin');
+ insert into public.profiles (id, full_name, role)
+ values ('f4e2524f-40af-4167-875e-04dc394e84b3', 'maznmhmde9@gmail.com ', 'admin');
 --
 -- لا تجعل أي مستخدم عادي admin.
 -- =========================================================
